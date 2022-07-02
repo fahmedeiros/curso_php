@@ -1,0 +1,13 @@
+como acessar a maquina pelo numero do IP 127.0.0.1
+
+A sintax do PHP.
+
+O php vai interpretar um bloco de codigo em nosso arquivo apenas se ele estiver entre as tags do PHP;
+
+A abertura é: <?php
+
+E o fechamento: ?>
+
+Coloque ; a cada instrução;
+
+Todo o cóndigo dentro destas tags será executado pelo PHP, e após isso será impresso na tela;
