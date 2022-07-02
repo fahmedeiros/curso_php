@@ -1,6 +1,9 @@
-como acessar a maquina pelo numero do IP 127.0.0.1
+" como acessar a maquina pelo numero do IP 127.0.0.1 "
 
-A sintax do PHP.
+
+
+
+" A sintax do PHP "
 
 O php vai interpretar um bloco de codigo em nosso arquivo apenas se ele estiver entre as tags do PHP;
 
@@ -11,3 +14,90 @@ E o fechamento: ?>
 Coloque ; a cada instrução;
 
 Todo o cóndigo dentro destas tags será executado pelo PHP, e após isso será impresso na tela;
+
+
+
+
+" PHP e suas dependências "
+
+Podemos checar como o PHP e suas dependências estão instaladas no nosso conputador;
+
+O nome da função é phpinfo()
+
+Ela exibe as versões também dos pacotes intalados;
+
+Útil para saber como o servidor está configurado;
+
+
+
+
+" Como tirar o máximo de proveito "
+
+Faça seus próprios exemplos com o que foi aprendido na aula;
+
+Crie seus próprios exemplos com o que foi aprendido na aula;
+
+Crie também projetos pessoais;
+
+Faça anotações dos pontos mais importantes;
+
+Dica bônus: assista a aula e depois executanto;
+
+
+
+" Short tags "
+
+É uma forma interessante de imprimir dados pois há um encho implícito, deixando a parte do front-end onde mistura-se o HTML e o PHP mais legivel.
+Por este motivo, escolhi esta abordagem para algumas exibições.
+Porém nas versões mais recentes do PHP o uso vem sendo desencorajado, e provávelmente o recurso será removido.
+Sempre que você se deparar com um erro, referente as short tags, utilize a seguinte sintax:
+
+<?php echo $nome; ?>
+
+É equivalente ao primeiro exemplos exibido nesta explicação, só que sem as short tags!
+Temos aqui que utilizar o echo para garantir a impressão dos valores, e consequentemente o HTML acaba ficando maior, porém adquado as 'novas regras' do PHP.
+
+
+
+
+" Conceitos básicos "
+
+1 - Case sensitivity {
+
+    Seingnifica sensibilidade a casas maiúsculas e minúscalas;
+    Para instruções PHP não temos essa diferença, ou seja: echo = ECHO;
+    Porém para variáveis são case sensitive, ou seja: $nome != $NOME;
+}
+
+2 - Intruções de códigos {
+
+    As instruções semples de PHP são separadas por ponto e virgula;
+    Instruções simples são instrução de uma linha;
+    Quando há uma instrução maior, como de condição ou repetição, a difinição da mesma é dada por abertura e fechamento de chaves;
+    Nestes casos não precisaremos de ponto e virgula;
+}
+
+3 - Espaços em branco {
+    
+    Para interpretação do código em PHP o espaço em branco é ignorado;
+    Isso acontece pois o mesmo é removido antes da execução;
+    A quebra de linha também é ignorada;
+    Porém se utilizada de má forma pode gerar erros inesperados no código;
+}
+
+4 - Comentários {
+
+    Os comentários servem para dar informações e direções importantes de como o código funciona;
+    Iniciamos um comnetário com: //;
+    Todo comentário que está em um comentário é ignorado na execução;
+    Não inserir informações sensíveis nos comentários;
+    Outra forma de inserir comentários é com: #;
+    Comentários multi linhas são feitos com: /* comentário */;
+}
+
+5 - Palavras reservadas {
+
+    Algumas palavras são resevadas da linguagem e já tem suas funcionalidades definidas, então não podemos utilizar em nossos programas;
+    Pois caso fosse possível poderiamos substituir a sua função original;
+    Alguns exemplos são: echo, insteadof, else, interface, namespace, pow, _DIR_, _FILE_, endif, print, private, protected, and, require, public, as, break, case, for, finally, switch, throw, etc;
+}
